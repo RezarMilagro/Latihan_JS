@@ -1,3 +1,4 @@
+// PART 1
 // soal 1
 let nilai1 = 80
 let hasil1 = ""
@@ -82,4 +83,15 @@ if (umur >= 17 && tinggi >= 160) {
     console.log("TInggi Belum Mencukupi")
 }else {
     console.log("tidak Boleh Masuk")
+}
+
+
+// PART 2
+// Soal 1
+for (i=0; i<=10; i++) {
+    console.log(i)
+}
+
+for (j=0; j<=10; j+=2) {
+    console.log(j)
 }
