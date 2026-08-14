@@ -32,12 +32,54 @@
 
 
 // tugas angkot 3
+// var jmlAngkot = 10
+// var angkotBeroperasi = 6
+// for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++ ) {
+//     if (noAngkot <= angkotBeroperasi) {
+//         console.log("Angkot No." + noAngkot + " Beroperasi dengan baik")
+//     }else {
+//         console.log("Angkot No." + noAngkot + " Sedang tidak beroperasi")
+//     }
+// }
+
+
+// tugas angkot 4 versi 1.1
 var jmlAngkot = 10
 var angkotBeroperasi = 6
-var noAngkot = 1
-for (noAngkot; noAngkot<=jmlAngkot; noAngkot++ ) {
+for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++ ) {
     if (noAngkot <= angkotBeroperasi) {
         console.log("Angkot No." + noAngkot + " Beroperasi dengan baik")
+    }else if (noAngkot === 8 || noAngkot === 10) {
+        console.log("Angkot No." + noAngkot + " Sedang lembur")
+    }else {
+        console.log("Angkot No." + noAngkot + " Sedang tidak beroperasi")
+    }
+}
+
+// tugas angkot 4 versi 1.2
+var jmlAngkot = 10
+var angkotBeroperasi = 6
+for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++ ) {
+    if (noAngkot <= angkotBeroperasi) {
+        console.log("Angkot No." + noAngkot + " Beroperasi dengan baik")
+        if (noAngkot === 5) {
+        console.log("Angkot No." + noAngkot + " Sedang Lembur")
+        }
+    }else if (noAngkot === 8 || noAngkot === 10) {
+        console.log("Angkot No." + noAngkot + " Sedang lembur")
+    }else {
+        console.log("Angkot No." + noAngkot + " Sedang tidak beroperasi")
+    }
+}
+
+// tugas angkot 4 versi 1.3
+var jmlAngkot = 10
+var angkotBeroperasi = 6
+for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++ ) {
+    if (noAngkot <= angkotBeroperasi && noAngkot !== 5) {
+        console.log("Angkot No." + noAngkot + " Beroperasi denga baik")
+    }else if (noAngkot === 8 || noAngkot === 10 || noAngkot === 5) {
+        console.log("Angkot No." + noAngkot + " Sedang lembur")
     }else {
         console.log("Angkot No." + noAngkot + " Sedang tidak beroperasi")
     }

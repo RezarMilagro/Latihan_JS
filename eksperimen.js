@@ -17,3 +17,14 @@ while (nilaiAwal <= 10) {
 for (var awalNilai = 1; awalNilai <= 10; awalNilai++) {
     console.log("Hello Kawan " + awalNilai + "x")
 }
+
+
+// if else
+var angka = prompt("Masukkan Angka")
+if (angka %2 == 0) {
+    alert(angka + " adalah bilangan GENAP")
+}else if (angka %2 == 1) {
+    alert(angka + " angka adalah bilangan GANJIL")
+}else {
+    alert("Masukkan angka jangan huruf")
+}
