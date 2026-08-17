@@ -110,3 +110,45 @@ function tes(a) {
 }
 tes(a)
 console.log(a)
+
+
+
+// REKURSIF
+// menggantikan looping
+// semua looping bisa dibuat rekursif, tapi tidak sebaliknya
+// looping
+function cetakAngka1(n){
+    for (var i = 10; i >= 0; i--) {
+        console.log(i)
+    }
+}
+cetakAngka1()
+
+// rekursif
+function cetakAngka2(n){
+    if (n === 0) { 
+        return
+    }
+    console.log(n)
+    cetakAngka2(n - 1)
+}
+cetakAngka2(5)
+
+// looping
+function faktorial1(n) {
+    hasil = 1
+    for ( var i = n; i > 0; i--) {
+        hasil *= i
+    }
+    return hasil
+}
+console.log(faktorial1(5))
+
+// rekursif
+function faktorial2(n) {
+    if (n === 0) {
+        return 1 
+    }
+    return n * faktorial2(n-1)
+}
+console.log(faktorial2(3))

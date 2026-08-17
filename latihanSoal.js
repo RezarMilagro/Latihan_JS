@@ -95,3 +95,45 @@ for (i=0; i<=10; i++) {
 for (j=0; j<=10; j+=2) {
     console.log(j)
 }
+
+
+// 1
+function sapa(nama) {
+    return nama
+}
+console.log(sapa("rezar")) 
+
+
+// 2
+function luasPersegi(s) {
+    var luas
+    luas = s * s
+
+    return luas
+}
+console.log(luasPersegi(5))
+
+// 3
+function cekNilai(nilai) {
+    var nilai
+    if (nilai > 100) {
+        hasil = "Nilai lebih dari 100"
+    } else if (nilai >= 80 && nilai <= 100) {
+        hasil = "A"
+    } else if (nilai >= 70 && nilai <= 79) {
+        hasil = "B"
+    } else if (nilai >= 60 && nilai <= 69) {
+        hasil = "C"
+    } else if (nilai >= 50 && nilai <= 59) {
+        hasil = "D"
+    } else if (nilai < 50 && nilai >= 0) {
+        hasil = "E"
+    }else if(nilai < 0) {
+        hasil = "Nilai kurang dari 0"
+    }else (
+        hasil = "Tidak ada nilai yang diinput"
+    )
+
+    return hasil
+}
+console.log(cekNilai(85))
